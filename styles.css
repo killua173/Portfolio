@@ -1,0 +1,386 @@
+/* styles.css */
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Navigation Menu Styles */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+nav .logo a {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Header Styles */
+
+header {
+    background: #f4f4f4;
+    padding-top: 100px; /* Adjust for fixed nav */
+    padding-bottom: 50px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-text .subtitle {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.header-text .social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+.header-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+
+section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+section:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: #007BFF;
+    display: block;
+    margin: 10px auto 0;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Timeline Styles */
+
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.timeline-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Projects Styles */
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+}
+
+.project-item h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    font-style: italic;
+    color: #666;
+}
+
+.project-item p {
+    margin-bottom: 15px;
+}
+
+/* Skills Styles */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    flex: 0 0 45%;
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Languages and Interests Styles */
+
+.language-list, .interests-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.language-list li, .interests-list li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+
+#contact {
+    background: #007BFF;
+    color: #fff;
+}
+
+#contact p {
+    color: #fff;
+}
+
+.contact-methods p {
+    font-size: 1.1em;
+}
+
+.contact-methods i {
+    margin-right: 10px;
+}
+
+.contact-methods a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-methods a:hover {
+    color: #eaeaea;
+}
+
+/* Footer Styles */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+
+@media (min-width: 768px) {
+
+    .header-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .header-text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .header-image {
+        flex: 1;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .projects-grid .project-item {
+        flex: 0 0 48%;
+    }
+
+    .skill {
+        flex: 0 0 22%;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    header {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .header-text h1 {
+        font-size: 3em;
+    }
+
+    .header-text .subtitle {
+        font-size: 1.5em;
+    }
+
+    .projects-grid .project-item {
+        flex: 0 0 30%;
+    }
+
+}
+
+/* Smooth Scrolling Offset for Fixed Header */
+
+body {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 70px; /* Adjust based on nav height */
+}
